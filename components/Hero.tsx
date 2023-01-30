@@ -15,7 +15,6 @@ export default function Hero({ pageInfo }: Props) {
       `Hi, My name is ${pageInfo?.name}`,
       "I'm-huge-football-fan",
       "<ButLoveToCodeMore />",
-      "checkMyPortfolioWebsite.tsx",
     ],
     loop: true,
     delaySpeed: 2000,
