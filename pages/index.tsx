@@ -1,20 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import WorkExperience from "@/components/WorkExperience";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import ContactMe from "@/components/ContactMe";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import About from "../components/About";
+import WorkExperience from "../components/WorkExperience";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import ContactMe from "../components/ContactMe";
 import Link from "next/link";
 import type { GetStaticProps } from "next";
 import { PageInfo, Experience, Skill, Project, Social } from "../typings";
-import { fetchPageInfo } from "@/utils/fetchPageInfo";
-import { fetchExperience } from "@/utils/fetchExperiences";
-import { fetchSkills } from "@/utils/fetchSkills";
-import { fetchProjects } from "@/utils/fetchProjects";
-import { fetchSocials } from "@/utils/fetchSocials";
+import { fetchPageInfo } from "../utils/fetchPageInfo";
+import { fetchExperience } from "../utils/fetchExperiences";
+import { fetchSkills } from "../utils/fetchSkills";
+import { fetchProjects } from "../utils/fetchProjects";
+import { fetchSocials } from "../utils/fetchSocials";
 
 type Props = {
   pageInfo: PageInfo;
@@ -24,7 +24,6 @@ type Props = {
   socials: Social[];
 };
 const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
-  console.log("check token", process.env.NEXT_APP_SANITY_PROJECT_ID);
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
