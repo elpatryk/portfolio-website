@@ -6,7 +6,7 @@ import {schemaTypes} from './schemas'
 export default defineConfig({
   projectId: 'xzcw3ldn',
   dataset: 'production',
-
+  useCdn: true,
   plugins: [deskTool(), visionTool()],
 
   schema: {
