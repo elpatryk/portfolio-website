@@ -32,6 +32,7 @@ export default function Header({ socials }: Props) {
             key={s._id}
             url={s.url}
             target="_blank"
+            rel="noopener noreferrer"
             fgColor="gray"
             bgColor="transparent"
           />
