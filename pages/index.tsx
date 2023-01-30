@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Image from "next/image";
 import About from "@/components/About";
 import WorkExperience from "@/components/WorkExperience";
 import Skills from "@/components/Skills";
@@ -24,6 +24,7 @@ type Props = {
   socials: Social[];
 };
 const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
+  console.log("check token", process.env.NEXT_APP_SANITY_PROJECT_ID);
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
@@ -55,7 +56,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <Image
+            <img
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
               src="https://www.i2symbol.com/images/text-symbols/h-symbol.png"
               alt=""
