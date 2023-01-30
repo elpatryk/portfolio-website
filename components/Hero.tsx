@@ -1,13 +1,17 @@
+import { urlFor } from "@/sanity";
+import { PageInfo } from "@/typings";
 import Link from "next/link";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircle from "./BackgroundCircle";
-type Props = {};
+type Props = {
+  pageInfo: PageInfo;
+};
 
-export default function Hero({}: Props) {
+export default function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
     words: [
-      "Hi, My name is Patryk Zmurko",
+      `Hi, My name is ${pageInfo?.name}`,
       "I'm-huge-football-fun",
       "<ButLoveToCodeMore />",
       "checkMyPortfolioWebsite.tsx",
@@ -20,12 +24,12 @@ export default function Hero({}: Props) {
       <BackgroundCircle />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="https://media.licdn.com/dms/image/C4E03AQFoWGuSbMIytg/profile-displayphoto-shrink_800_800/0/1664042211082?e=2147483647&v=beta&t=JQOAuW9i99iIppoO72cw1q5GieFN6bd9rarw9LqVpv4"
+        src={urlFor(pageInfo.heroImage).url()}
         alt=""
       />
       <div className="z-20">
         <h3 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
-          Full Stack Developer
+          {pageInfo?.role}
         </h3>
         <h1 className="text-5xl lg:text-6xl font-semibold px-10">
           <span>{text} </span>
