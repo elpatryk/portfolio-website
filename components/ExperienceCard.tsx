@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 import { Experience } from "@/typings";
 import { urlFor } from "@/sanity";
