@@ -31,6 +31,7 @@ export default function Header({ socials }: Props) {
           <SocialIcon
             key={s._id}
             url={s.url}
+            target="_blank"
             fgColor="gray"
             bgColor="transparent"
           />
