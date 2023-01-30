@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [""],
+    domains: ["www.i2symbol.com"],
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if

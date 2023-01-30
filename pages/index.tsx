@@ -57,7 +57,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
           <div className="flex items-center justify-center">
             <Image
               className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src=""
+              src="https://www.i2symbol.com/images/text-symbols/h-symbol.png"
               alt=""
               width="10"
               height="10"
