@@ -28,14 +28,15 @@ export default function Header({ socials }: Props) {
         className="flex flex-row items-center"
       >
         {socials.map((s) => (
-          <SocialIcon
-            key={s._id}
-            url={s.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            fgColor="gray"
-            bgColor="transparent"
-          />
+          <a target="_blank" rel="noopener noreferrer" key={s._id}>
+            {" "}
+            <SocialIcon
+              key={s._id}
+              url={s.url}
+              fgColor="gray"
+              bgColor="transparent"
+            />
+          </a>
         ))}
       </motion.div>
       <div>
