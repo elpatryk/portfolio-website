@@ -13,8 +13,9 @@ export default function Hero({ pageInfo }: Props) {
   const [text, count] = useTypewriter({
     words: [
       `Hi, My name is ${pageInfo?.name}`,
-      "I'm-huge-football-fan",
+      "I'm-huge-football-fun",
       "<ButLoveToCodeMore />",
+      "checkMyPortfolioWebsite.tsx",
     ],
     loop: true,
     delaySpeed: 2000,
@@ -24,7 +25,7 @@ export default function Hero({ pageInfo }: Props) {
       <BackgroundCircle />
       <img
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src={urlFor(pageInfo?.heroImage).url()}
+        src={urlFor(pageInfo.heroImage).url()}
         alt=""
       />
       <div className="z-20">
