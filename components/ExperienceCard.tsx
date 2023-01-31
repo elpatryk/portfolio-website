@@ -32,7 +32,7 @@ export default function ExperienceCard({ experience }: Props) {
         <h4 className="text-4xl font-light">Student</h4>
         <p className="font-bold text-2xl mt-1">Codaisseur Academy</p>
         <div className="flex space-x-2 my-2 ">
-          {experience.technologies.map((technology, i) => (
+          {experience?.technologies.map((technology, i) => (
             <img
               key={i}
               alt=""
@@ -42,8 +42,8 @@ export default function ExperienceCard({ experience }: Props) {
           ))}
         </div>
         <p className="uppercase py-5 text-gray-300">
-          {new Date(experience.dateStarted).toDateString()} -{" "}
-          {new Date(experience.dateEnded).toDateString()}{" "}
+          {new Date(experience?.dateStarted).toDateString()} -{" "}
+          {new Date(experience?.dateEnded).toDateString()}{" "}
         </p>
         <ul className="list-disc space-y-4 ml-5 text-lg max-h-96 overflow-y-scroll pr-10 scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80">
           {experience.points.map((point, i) => (
