@@ -46,10 +46,10 @@ export default function Projects({ projects }: Props) {
                 Technology used:{" "}
                 <div className="flex items-center space-x-2 justify-center">
                   {" "}
-                  {project?.technologies.map((technology) => (
+                  {project.technologies.map((technology) => (
                     <img
                       key={technology._id}
-                      src={urlFor(technology.image).url()}
+                      src={urlFor(technology?.image).url()}
                       alt="not"
                       className="h-12 w-12"
                     />
