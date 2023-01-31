@@ -31,7 +31,7 @@ export default function ExperienceCard({ experience }: Props) {
       <div className="px-0 md:px-10">
         <h4 className="text-4xl font-light">Student</h4>
         <p className="font-bold text-2xl mt-1">Codaisseur Academy</p>
-        <div className="flex space-x-2 my-2 ">
+        {/* <div className="flex space-x-2 my-2 ">
           {experience?.technologies.map((technology, i) => (
             <img
               key={i}
@@ -40,7 +40,7 @@ export default function ExperienceCard({ experience }: Props) {
               className="h-10 w-10 rounded-full object-cover "
             />
           ))}
-        </div>
+        </div> */}
         <p className="uppercase py-5 text-gray-300">
           {new Date(experience?.dateStarted).toDateString()} -{" "}
           {new Date(experience?.dateEnded).toDateString()}{" "}
