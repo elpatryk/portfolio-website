@@ -15,8 +15,7 @@ import { fetchExperience } from "../utils/fetchExperiences";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocials } from "../utils/fetchSocials";
-import { useRouter } from "next/router";
-import { useEffect } from "react";
+
 type Props = {
   pageInfo: PageInfo;
   experiences: Experience[];
@@ -25,14 +24,6 @@ type Props = {
   socials: Social[];
 };
 const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
-  const router = useRouter();
-  const refreshData = () => {
-    router.replace(router.asPath);
-  };
-  useEffect(() => {
-    refreshData();
-  }, []);
-
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
