@@ -51,6 +51,14 @@ export default function Hero({ pageInfo }: Props) {
           <Link href="#projects">
             <button className="heroButton">projects</button>
           </Link>
+
+          <a
+            className="heroButtonDownload"
+            href="Patryk_Zmurko_CV.pdf"
+            download="Patryk_Zmurko_CV"
+          >
+            Download CV
+          </a>
         </div>
       </div>
     </div>
