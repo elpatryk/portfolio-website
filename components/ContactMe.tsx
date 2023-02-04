@@ -20,11 +20,9 @@ export default function ContactMe({ pageInfo }: Props) {
 
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2l">
-        Contact
-      </h3>
+      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2l"></h3>
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold text-center">
+        <h4 className="text-2xl font-semibold text-center">
           I have got just what you need.{" "}
           <span className="decoration-[#F7AB0A]/50 underline">Lets talk.</span>
         </h4>
