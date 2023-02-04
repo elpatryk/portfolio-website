@@ -23,7 +23,7 @@ export default function Skills({ skills }: Props) {
         SKILLS
       </h3>
 
-      <div className="grid grid-cols-4 gap-5">
+      <div className="grid grid-cols-4 gap-4">
         {skills?.map((s) => (
           // eslint-disable-next-line react/jsx-key
           <Skill key={s._id} skill={s} />

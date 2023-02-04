@@ -17,7 +17,6 @@ export default function About({ pageInfo }: Props) {
     >
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500">
         {" "}
-        About
       </h3>
 
       <motion.img
@@ -31,10 +30,10 @@ export default function About({ pageInfo }: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         src={urlFor(pageInfo?.profilePic).url()}
-        className="-mb-20 md:mb-0  flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="-mb-20 md:mb-0  flex-shrink-0 w-40 h-40 rounded-full object-cover sm:w-56 sm:h-56  md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
       />
 
-      <div className="space-y px-0 md:px-10">
+      <div className="space-y px-0   md:px-10">
         <p className="text-base">{pageInfo.backgroundInformation}</p>
       </div>
     </motion.div>
