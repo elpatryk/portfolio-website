@@ -28,7 +28,7 @@ export default function Projects({ projects }: Props) {
               transition={{
                 duration: 1.2,
               }}
-              className="rounded object-cover w-24 h-24 xl:h-32 xl:w-32 md:h-28 md:w-28"
+              className="rounded object-cover h-20 w-20 sm:w-24 sm:h-24 xl:h-32 xl:w-32 md:h-28 md:w-28"
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               src={urlFor(project.image).url()}
@@ -41,7 +41,7 @@ export default function Projects({ projects }: Props) {
                   <Link href={project.linkToBuild}> {project.title} </Link>
                 </span>
               </h4>
-              <div className="text-lg text-center md:text-left">
+              <div className="text-sm md:text-lg text-center md:text-left">
                 {project.summary}
                 Technology used:{" "}
                 <div className="flex items-center space-x-2 justify-center">

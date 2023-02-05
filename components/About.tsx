@@ -30,11 +30,11 @@ export default function About({ pageInfo }: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         src={urlFor(pageInfo?.profilePic).url()}
-        className="-mb-20 md:mb-0  flex-shrink-0 w-40 h-40 rounded-full object-cover sm:w-56 sm:h-56  md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="-mb-20 md:mb-0  flex-shrink-0 w-40 h-30 rounded-full object-cover sm:w-56 sm:h-56  md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
       />
 
-      <div className="space-y px-0   md:px-10">
-        <p className="text-base">{pageInfo.backgroundInformation}</p>
+      <div className="space-y px-0  md:px-10">
+        <p className="text-sm sm:text-base">{pageInfo.backgroundInformation}</p>
       </div>
     </motion.div>
   );
