@@ -49,7 +49,7 @@ export default function ExperienceCard({ experience }: Props) {
           {new Date(experience?.dateStarted).toDateString()} -{" "}
           {new Date(experience?.dateEnded).toDateString()}{" "}
         </p>
-        <ul className="list-disc space-y-4 ml-5 text-xs max-w-xs md:text-lg max-h-96 overflow-y-scroll pr-10 scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80">
+        <ul className="list-disc space-y-4 ml-5 text-xs max-w-xs sm:max-w-lg md:text-sm max-h-96 overflow-y-scroll pr-10 scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80">
           {experience.points.map((point, i) => (
             <li key={i}>{point}</li>
           ))}
@@ -57,4 +57,7 @@ export default function ExperienceCard({ experience }: Props) {
       </div>
     </article>
   );
+}
+{
+  /* <ul className="list-disc space-y-4 ml-5 text-xs max-w-xs md:text-lg max-h-96 overflow-y-scroll pr-10 scrollbar-thin scrollbar-track-black scrollbar-thumb-[#F7AB0A]/80"></ul>; */
 }
